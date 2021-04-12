@@ -19,7 +19,11 @@
 	  <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.3" />
 	  <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.1" />  </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="db\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\todo-api-business-logic\todo-api-business-logic.csproj" />
+    <ProjectReference Include="..\todo-api-data-access\todo-api-data-access.csproj" />
   </ItemGroup>
 
 
