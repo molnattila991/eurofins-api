@@ -1,3 +1,8 @@
+# Build and Run in Visual Studio 2019 Community Edition
+-Open the Solution
+-Run project with IIS Express
+-It will open http://localhost:5000/swagger/index.html
+
 # Build and Run from Terminal:
 ## Use the following commands
 - git clone https://github.com/molnattila991/eurofins-api
@@ -8,8 +13,3 @@
 
 ## Open the following url in browser
 - http://localhost:5000/swagger/index.html
-
-# Build and Run in Visual Studio 2019 Community Edition
--Open the Solution
--Run project with IIS Express
--It will open http://localhost:5000/swagger/index.html
