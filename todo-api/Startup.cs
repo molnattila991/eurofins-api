@@ -33,6 +33,7 @@ namespace todo_api
                 {
                     builder.WithMethods("POST", "DELETE", "PUT", "GET");
                     builder.WithOrigins("http://localhost:4200");
+                    builder.AllowAnyHeader();
                 });
             });
 
