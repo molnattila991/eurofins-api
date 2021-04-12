@@ -16,5 +16,5 @@
 - http://localhost:5000/swagger/index.html
 
 # Test In Postman
-- Import TodoAPI.postman_collection into Postman
+- Import TodoAPI.postman_collection.json into Postman
 - You can find the test file in repository root
