@@ -77,8 +77,12 @@ namespace todo_api_data_access.Repositories
 
             try
             {
-                _context.Update(entity);
-                await _context.SaveChangesAsync();
+                var itemInDB = await _context.Set<T>().Where(item => item.Id == entity.Id).FirstOrDefaultAsync();
+                if (itemInDB != null)
+                {
+                    _context.Update(entity);
+                    await _context.SaveChangesAsync();
+                }
 
                 return entity;
             }

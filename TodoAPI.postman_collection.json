@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e4dd2648-cb94-4fbc-ab26-ac2981251a35",
+		"_postman_id": "cc109d2b-9775-4f91-800e-2696c7c76f5f",
 		"name": "TodoAPI",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -106,7 +106,9 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": ""
+				}
 			},
 			"response": []
 		},
