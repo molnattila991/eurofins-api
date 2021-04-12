@@ -12,7 +12,7 @@ namespace todo_api_data_access
     {
         public static void AddDataAccess(this IServiceCollection services)
         {
-            services.AddDbContext<TodoDBContext>(options => options.UseSqlite("Data Source=./db/db.db"));
+            services.AddDbContext<TodoDBContext>(options => options.UseSqlite("Data Source=./db.db"));
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         }

@@ -36,4 +36,5 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 
-.structuredLog.json
+**/structuredLog.json
+**/db.db
