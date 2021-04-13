@@ -46,13 +46,19 @@ namespace todo_api.Controllers
         }
 
         [HttpPost("/[controller]/filter")]
-        public async Task<IEnumerable<TodoItem>> GetFiltered([FromBody] TodoListFilter filter)
+        public async Task<IActionResult> GetFiltered([FromBody] TodoListFilter filter)
         {
+            _logger.LogInformation("test");
             if (filter == null)
             {
-
+                return BadRequest();
             }
-            return await _todoItemListService.GetAllContainText(filter.Text);
+            else if (filter.Text == null)
+            {
+                return BadRequest(new { Errors = new { Text = new string[] { "Filter text must be set." } } });
+            }
+
+            return Ok(await _todoItemListService.GetAllContainText(filter.Text));
         }
 
         [HttpPost]

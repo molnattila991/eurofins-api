@@ -8,7 +8,7 @@ using todo_api_shared;
 
 namespace todo_api_business_logic.Services
 {
-    class TodoItemService : ITodoItemService
+    public class TodoItemService : ITodoItemService
     {
         private readonly IRepository<TodoItem> _todoRepository;
 

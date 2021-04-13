@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-api-data-access", "tod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-api-shared", "todo-api-shared\todo-api-shared.csproj", "{304C1563-5945-4F65-972C-D39FCF0AAD78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todo-api-business-logic.test", "todo-api-business-logic.test\todo-api-business-logic.test.csproj", "{DCD53164-7D90-4810-A07B-3E9973E878D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-api-business-logic.test", "todo-api-business-logic.test\todo-api-business-logic.test.csproj", "{DCD53164-7D90-4810-A07B-3E9973E878D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
