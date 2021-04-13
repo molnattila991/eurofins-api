@@ -31,6 +31,8 @@ namespace todo_api.Controllers
             _todoItemListService = todoItemListService;
             _todoItemService = todoItemService;
             _mapper = mapper;
+
+            _logger.LogError("Todo Controller Created...");
         }
 
         [HttpGet]
@@ -48,13 +50,16 @@ namespace todo_api.Controllers
         [HttpPost("/[controller]/filter")]
         public async Task<IActionResult> GetFiltered([FromBody] TodoListFilter filter)
         {
-            _logger.LogInformation("test");
+            
             if (filter == null)
             {
+                _logger.LogError("Some errors");
                 return BadRequest();
             }
             else if (filter.Text == null)
             {
+                _logger.LogError("Some other errors");
+
                 return BadRequest(new { Errors = new { Text = new string[] { "Filter text must be set." } } });
             }
 
