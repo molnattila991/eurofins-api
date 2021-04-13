@@ -4,7 +4,12 @@
 - Run project with IIS Express
 - It will open http://localhost:5000/swagger/index.html
 
-# Build and Run in Terminal:
+# Unit testing
+- git clone https://github.com/molnattila991/eurofins-api
+- cd .\eurofins-api\
+- dotnet test
+
+# Build and Run in Terminal
 ## Use the following commands
 - git clone https://github.com/molnattila991/eurofins-api
 - cd .\eurofins-api\
